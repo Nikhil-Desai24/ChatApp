@@ -8,7 +8,7 @@ import { doc, updateDoc, arrayUnion, serverTimestamp } from 'firebase/firestore'
 import { db } from '../firebase';
 import { v4 as uuid } from 'uuid';
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
-import { auth, storage } from '../firebase';
+import {  storage } from '../firebase';
 
 const Input = () => {
   const [text, setText] = useState('');
